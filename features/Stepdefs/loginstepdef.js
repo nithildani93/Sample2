@@ -12,7 +12,7 @@ Given(/^I am on the (\w+) Page$/, async(page) => {
 
 When(/^I login with (\w+) and (\w+)$/, async(username, password) => {
 	await (LoginPage.getusername).setValue(username);
-	await Utils.highlightById(LoginPage.getusername);
+	//await Utils.highlightById(LoginPage.getusername);
 	await (LoginPage.getpassword).setValue(password);
 	await LoginPage.submitbtn.click();
 });
