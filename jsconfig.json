@@ -1,16 +1,11 @@
 {
-    "compilerOptions": {
-        "types": [
-            "node",
-            "webdriverio/async",
-            "@wdio/cucumber-framework"
-        ]
-    },
-    "include": [
-        "features/*/*.js",
-        "**/*.json",
-        "node_modules/@wdio/sync",
-        "node_modules/@wdio/cucumber-framework"
-
-    ]
+  "compilerOptions": {
+    "types": ["node", "webdriverio/async", "@wdio/cucumber-framework"]
+  },
+  "include": [
+    "features/*/*.js",
+    "**/*.json",
+    "node_modules/@wdio/sync",
+    "node_modules/@wdio/cucumber-framework"
+  ]
 }

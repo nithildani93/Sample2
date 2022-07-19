@@ -1,20 +1,22 @@
+import { Page } from './page';
 
-const Page = require('./page');
+export const IPT_USERNAME = '#username';
+const IPT_PASSWORD = '#password';
+const BTN_SUBMIT = '#login';
 
- class LoginPage extends Page {
-    get getusername(){
-        return $('#username');
-    }
-    get getpassword(){
-        return $('#password');
-    }
-    get submitbtn(){
-        return $('#login');
-    }
+class LoginPage extends Page {
+  get getUsername() {
+    return $(IPT_USERNAME);
+  }
+  get getPassword() {
+    return $(IPT_PASSWORD);
+  }
+  get submitBtn() {
+    return $(BTN_SUBMIT);
+  }
 
-    open () {
-        return super.open('index');
-    }
-
+  async open() {
+    return await super.open('index');
+  }
 }
 export default new LoginPage();
