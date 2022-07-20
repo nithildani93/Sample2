@@ -1,7 +1,5 @@
 import { Page } from './page';
 
-
-import {Page}  from './page';
 import Utils from './Utilities';
 export const IPT_USERNAME = '#username';
 const IPT_PASSWORD = '#password';

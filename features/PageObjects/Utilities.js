@@ -6,5 +6,4 @@ class Utilities {
       }, element);
     }
   }
-}
 export default new Utilities();
