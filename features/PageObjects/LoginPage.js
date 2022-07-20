@@ -19,6 +19,7 @@ const BTN_SUBMIT = '#login';
     get submitbtn(){
         return $(BTN_SUBMIT);
     }   
+    
 
     async open () {
         return await super.open('index');
