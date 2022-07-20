@@ -7,3 +7,4 @@ export class Page {
       return await browser.url(`https://adactinhotelapp.com/${path}.php`);
     }
   }
+

@@ -1,10 +1,12 @@
+import { Page } from './page';
+
 
 import {Page}  from './page';
 import Utils from './Utilities';
-
 export const IPT_USERNAME = '#username';
 const IPT_PASSWORD = '#password';
 const BTN_SUBMIT = '#login';
+
 
  class LoginPage extends Page {
     
@@ -24,5 +26,8 @@ const BTN_SUBMIT = '#login';
         return await super.open('index');
     }
 
+  async open() {
+    return await super.open('index');
+  }
 }
 export default new LoginPage();
