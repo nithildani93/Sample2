@@ -1,0 +1,1 @@
+DISABLE_RERUN=true node_modules/.bin/wdio run  --spec=C:/Users/nitarula/Documents/Sample2/features/login.feature:3

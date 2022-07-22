@@ -7,3 +7,4 @@ Feature: Test the Login Functionality of Adactin app
         Examples:
             | username   | password |
             | nithildani | 4LW73C   |
+            | nithil     | nithil   |

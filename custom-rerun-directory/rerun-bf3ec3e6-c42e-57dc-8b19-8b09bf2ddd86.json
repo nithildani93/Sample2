@@ -1,0 +1,1 @@
+[{"location":"C:\\Users\\nitarula\\Documents\\Sample2\\features\\login.feature:3","failure":"AssertionError: expected 'https://adactinhotelapp.com/SearchHot…' to include 'SearchAHotel'\n    at World.<anonymous> (C:\\Users\\nitarula\\Documents\\Sample2\\features\\Stepdefs\\/loginstepdef.js:23:37)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}]

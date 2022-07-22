@@ -1,3 +1,4 @@
+import RerunService from 'wdio-rerun-service';
 exports.config = {
     //
     // ====================
@@ -114,7 +115,11 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['chromedriver'],
+    services: ['chromedriver',[RerunService,{
+        rerunDataDir: './custom-rerun-directory'
+        }]
+    ],
+
     
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
@@ -136,18 +141,12 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec'],reporters: [
-        // Like this with the default options, see the options below
-        //'cucumberjs-json',
-        // OR like this if you want to set the folder and the language
-        [ 'cucumberjs-json', {
-                jsonFolder: 'Reports/new/',
-                language: 'en',
-            },
-        ],
+    reporters: ['spec',['allure', {
+        outputDir: 'allure-results',
+        disableWebdriverStepsReporting: true,
+        disableWebdriverScreenshotsReporting: false,
+        }]
     ],
-
-
     //
     // If you are using Cucumber you need to specify the location of your step definitions.
     cucumberOpts: {
@@ -293,8 +292,11 @@ exports.config = {
      * @param {String}                   uri      path to feature file
      * @param {GherkinDocument.IFeature} feature  Cucumber feature object
      */
-    // afterFeature: function (uri, feature) {
-    // },
+    afterFeature: async function (uri, feature) {
+        if (error) {
+            await browser.saveScreenshot('allure-results/errorpage.png');
+          }
+    },
     
     /**
      * Runs after a WebdriverIO command gets executed

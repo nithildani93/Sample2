@@ -1,0 +1,83 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1658329074890' stop='1658329079597'>
+    <name>Test the Login Functionality of Adactin app: As a valid user I Should be able to login</name>
+    <title>Test the Login Functionality of Adactin app: As a valid user I Should be able to login</title>
+    <test-cases>
+        <test-case start='1658329074891' status='passed' stop='1658329074891'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1658329074891' status='passed' stop='1658329075198'>
+            <name>Given I am on the index Page</name>
+            <title>Given I am on the index Page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1658329075199' status='passed' stop='1658329076520'>
+            <name>When I login with nithil and nithil</name>
+            <title>When I login with nithil and nithil</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1658329076520' status='failed' stop='1658329079595'>
+            <name>Then I should see "SearchHotel" page</name>
+            <title>Then I should see "SearchHotel" page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>AssertionError: expected 'https://adactinhotelapp.com/index.php' to include 'SearchHotel'</message>
+                <stack-trace>AssertionError: expected 'https://adactinhotelapp.com/index.php' to include 'SearchHotel'
+                    at World.&lt;anonymous> (C:\Users\nitarula\Documents\Sample2\features\Stepdefs\/loginstepdef.js:23:37)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1658329079596' status='passed' stop='1658329079597'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.114'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
